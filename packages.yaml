@@ -60,12 +60,12 @@ packages:
       ziglang: [zig]
     permissions:
       read: world
-      write: user
+      write: group
   # texlive build fails, but we have a by-hand module
-  #texlive:
-  #  version: [20220000]
-  #  buildable: false
-  #  externals:
-  #  - spec: texlive@20220000
-  #    modules:
-  #    - texlive/2022
+  texlive:
+    version: [20220000]
+    buildable: false
+    externals:
+    - spec: texlive@20220000
+      modules:
+      - texlive/2022
